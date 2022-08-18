@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <link rel="stylesheet" href="style/calculator.css">
+   
+    <title>Welcome WorldNews</title>
+</head>
+<body>
+  <div class="jumbotron text-center " style="margin-bottom:0 " >
+  </style>
+    <h1>| | World News | |</h1>
+    <p style="font-size: larger;">News from Turkey</p> 
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="1.home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="2.news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="3.sport.html">Sport</a>
+
+          </li>
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="4.travel.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="5.culture.html" >Culture</a>
+
+            <li class="nav-item">
+              <a class="nav-link" href="7.sign-in.html">Sign-in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" ><strong>Calculator</strong></a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                More
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutme.html">About Me</a>
+                <a class="dropdown-item" href="contactme.html">Contact Me</a>
+                <a class="dropdown-item" href="8.cover-page.html">Cover-Page</a>
+              
+              </div>
+            </li>
+            <div id="search-btn">
+              <form class="d-flex" action="http://www.google.com/search" method="get">
+               <input class="form-control me-2" type="text"  name="q" placeholder="What are u looking for?" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search  </button>
+              </form>
+             </div>
+         
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+      </header>
+<body> 
+    <br>
+           
+   
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+     
+      <form name="form1">
+      
+        <table BORDER=2>
+            <tr>
+                <td>
+                    <input  TYPE="text" ID="screen" NAME="screen" style="width:99.9%">
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input TYPE="button" NAME="7" VALUE="  7  " onclick="insertTextbox(7)">
+                    <input TYPE="button" NAME="8" VALUE="  8  " onclick="insertTextbox(8)">
+                    <input TYPE="button" NAME="9" VALUE="  9  " onclick="insertTextbox(9)">
+                    
+                    <br>
+                    <input TYPE="button" NAME="4" VALUE="  4  " onclick="insertTextbox(4)">
+                    <input TYPE="button" NAME="5" VALUE="  5  " onclick="insertTextbox(5)">
+                    <input TYPE="button" NAME="6" VALUE="  6  " onclick="insertTextbox(6)">
+                    <br>
+                    <input TYPE="button" NAME="1" VALUE="  1  " onclick="insertTextbox(1)">
+                    <input TYPE="button" NAME="2" VALUE="  2  " onclick="insertTextbox(2)">
+                    <input TYPE="button" NAME="3" VALUE="  3  " onclick="insertTextbox(3)">
+                    <br>
+                    <input TYPE="button" NAME="0" VALUE="  0  " onclick="insertTextbox(0)">
+                    <input TYPE="button" NAME="." VALUE="  .  " onclick="insertTextbox('.')">
+                    <input TYPE="button" NAME="/" VALUE="  /  " onclick="insertTextbox('/')">
+                    <br>
+                    <input TYPE="button" NAME="+" VALUE="  +  " onclick="insertTextbox('+')">
+                    <input TYPE="button" NAME="-" VALUE="  -  " onclick="insertTextbox('-')">
+                    <input TYPE="button" NAME="*" VALUE="  x  " onclick="insertTextbox('*')">
+                    <br>
+                    <input TYPE="button" NAME="1/x" VALUE=" 1/x "  onclick="dividedByOne();">
+                    <input TYPE="button" NAME="c"   VALUE="  c  " onclick="reset();">
+                    <input TYPE="button" NAME="="   VALUE="  =  " onclick="result();">
+                </td>
+            </tr>
+        </table>
+    </form> 
+    </div>
+    <div class="col">
+    </div>
+  </div>
+               
+
+</body>
+</html>

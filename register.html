@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
     <style>
       .fakeimg {
         height: 200px;
@@ -31,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="1.home.html">Home</a>
+            <a class="nav-link " aria-current="page" href="1.home.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="2.news.html">News</a>
@@ -50,6 +51,9 @@
 
             <li class="nav-item">
               <a class="nav-link" href="7.sign-in.html">Sign-in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"><strong>Register</strong></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -78,24 +82,31 @@
       </header>
     
       <div class="container">
-        <form>
+        <form action="calculator.html">
           <br>
           <div class="col-md-4">
-            <label for="validationDefault01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="Osman" required>
+            <label for="validationDefault01" id="isim" class="form-label">First name</label>
+            <input type="text" class="form-control"  placeholder="Osman" required>
           </div><br>
           <div class="col-md-4">
-            <label for="validationDefault02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Yılmaz" required>
+            <label for="validationDefault02" id="lastname" class="form-label">Last name</label>
+            <input type="text" class="form-control"  placeholder="Yılmaz" required>
           </div><br>
           <div class="col-md-4">
-            <label for="validationDefault01" class="form-label">Email Account</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="for ex: a@example.com" required>
+            <label for="validationDefault01" id="email" class="form-label">Email Account</label>
+            <input type="text" class="form-control"  placeholder="for ex: a@example.com" required>
           </div><br>
           <div class="col-md-4">
-            <label for="validationDefaultUsername" class="form-label">Username </label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="osmanylmz" required>
-        
+            <label for="validationDefault01" id="password" class="form-label">Password</label>
+            <input type="password" class="form-control"   required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault01" id="cpassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control"   required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" id="username" class="form-label">Username </label>
+            <input type="text" class="form-control"  placeholder="osmanylmz" required>
             <div class="form-group">
               <label for="sel1">Degree:</label>
               <select class="form-control" id="sel1">
@@ -114,7 +125,7 @@
                 <option>Female</option>
               </select>
             </div>
-            <label for="example-date-input" class="col-2 col-form-label">DateOfBirth</label>
+            <label for="example-date-input" id="birthday" class="col-2 col-form-label">DateOfBirth</label>
             <div class="col-10">
               <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input">
             </div><br>
@@ -177,7 +188,7 @@
             <label for=""><strong>About Me</strong></label><br>
             <textarea name="message" id="message" rows="10" columns="100"></textarea><br>
             <input type="reset" value="Clear">
-            <button type="submit"><a href="thanks-for-registrate.html" target="_blank" >SignUp</a></button><br>
+            <button type="submit">Submit</a></button><br>
     
     
         </form>
