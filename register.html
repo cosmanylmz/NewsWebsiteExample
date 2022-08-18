@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .fakeimg {
+        height: 200px;
+        background: #aaa;
+      }
+      </style>
+    <title>Register</title>
+</head>
+<body>
+  <div class="jumbotron text-center" style="margin-bottom:0" >
+  </style>
+    <h1>| | World News | |</h1>
+    <p style="font-size: larger;">News from Turkey</p> 
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="1.home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="2.news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="3.sport.html">Sport</a>
+
+          </li>
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="4.travel.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="5.culture.html" >Culture</a>
+
+            <li class="nav-item">
+              <a class="nav-link" href="7.sign-in.html">Sign-in</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                More
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutme.html">About Me</a>
+                <a class="dropdown-item" href="contactme.html">Contact Me</a>
+                <a class="dropdown-item" href="8.cover-page.html">Cover-Page</a>
+              
+              </div>
+            </li>
+         
+         
+        </ul>
+        <div id="search-btn">
+          <form class="d-flex" action="http://www.google.com/search" method="get">
+           <input class="form-control me-2" type="text"  name="q" placeholder="What are u looking for?" aria-label="Search">
+           <button class="btn btn-outline-success" type="submit">Search  </button>
+          </form>
+         </div>
+      </div>
+    </div>
+  </nav>
+        
+      </header>
+    
+      <div class="container">
+        <form>
+          <br>
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Osman" required>
+          </div><br>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Yılmaz" required>
+          </div><br>
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Email Account</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="for ex: a@example.com" required>
+          </div><br>
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Username </label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="osmanylmz" required>
+        
+            <div class="form-group">
+              <label for="sel1">Degree:</label>
+              <select class="form-control" id="sel1">
+                <option selected>Choose...</option>
+                <option>Lisans</option>
+                <option>Yüksek Lisans</option>
+                <option>None of them</option>
+                
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sel1">Gender:</label>
+              <select class="form-control" id="sel1">
+                <option selected>Choose...</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+            <label for="example-date-input" class="col-2 col-form-label">DateOfBirth</label>
+            <div class="col-10">
+              <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input">
+            </div><br>
+            <strong>Hobbies</strong><br>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="check1">
+                <input type="checkbox" class="form-check-input" id="check1" name="hobi1" value="something" checked>Technology
+              </label>
+            </div>
+        
+            <div class="form-check-inline">
+              <label class="form-check-label" for="check2">
+                <input type="checkbox" class="form-check-input" id="check2" name="hobi2" value="something">Culture
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check3" name="hobi3" value="something">Sport
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check4" name="hobi4" value="something">Finance
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check5" name="hobi5" value="something"> Education
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check6" name="hobi6" value="something">> Gaming
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check7" name="hobi7" value="something">  Politics
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check8" name="hobi8" value="something"> Comedy
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check9" name="hobi9" value="something">Music
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="check10" name="hobi10" value="something">  Autos and Vehicles
+              </label>
+            </div><br>
+            
+           
+        
+    
+            <label for=""><strong>About Me</strong></label><br>
+            <textarea name="message" id="message" rows="10" columns="100"></textarea><br>
+            <input type="reset" value="Clear">
+            <button type="submit"><a href="thanks-for-registrate.html" target="_blank" >SignUp</a></button><br>
+    
+    
+        </form>
+      </div>
+</body>
+</html>
